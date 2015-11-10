@@ -7,6 +7,18 @@
         strong{background-color: antiquewhite;}
         li a{ color: brown;}
         li a strong{color: darkmagenta;}
+        strong.subrrayar{
+            text-decoration: underline;
+        }
+        .destacar{
+            background-color: darkmagenta;
+            color: white;
+        }
+        #especial{
+            font-size: 20px;
+            font-family: verdana;
+        }
+
     </style>
 </head>
 <body>
@@ -17,7 +29,7 @@
     <h2>Título artículo 1</h2>
 
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos labore magni natus numquam porro sapiente vero.
-        Asperiores doloremque <strong>error eveniet</strong> impedit labore laboriosam non pariatur reiciendis sed, sunt
+        Asperiores doloremque <strong class="subrrayar">error eveniet</strong> impedit labore laboriosam non pariatur reiciendis sed, sunt
         totam!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolorem ea enim excepturi fugit ipsum
         molestias nisi, odit, praesentium provident repudiandae sapiente sed. Accusamus aperiam doloribus explicabo
         omnis qui quidem?</p>
@@ -31,15 +43,15 @@
 
     <h2>Título artículo 2</h2>
 
-    <p>Accusantium, <a href="#">ad aliquam aperiam</a> autem consequatur dicta dolor et ex exercitationem explicabo facilis fugiat in
+    <p class="destacar">Accusantium, <a href="#">ad aliquam aperiam</a> autem consequatur dicta dolor et ex exercitationem explicabo facilis fugiat in
         incidunt, itaque iure obcaecati odio pariatur perspiciatis quas ratione rerum sapiente sequi sit veritatis
         vero?Enim fuga maxime repellat! Ad adipisci animi, at debitis deserunt dolore doloribus ea eius labore mollitia,
         nobis, non nulla officiis quas quidem quis reprehenderit similique sunt tempore temporibus veritatis vitae.</p>
 
     <h2>Título artículo 3</h2>
 
-    <p>Adipisci, amet animi assumenda at commodi dicta eius et eum ex fuga fugiat fugit ipsam laboriosam mollitia natus
-        necessitatibus neque quod repellat sit temporibus vel voluptas voluptates voluptatum? Id, voluptate?Accusantium
+    <p id="especial">Adipisci, amet animi assumenda at commodi dicta eius et eum ex fuga fugiat fugit ipsam laboriosam mollitia natus
+        necessitatibus <span class="destacar"> quod repellat sit temporibus vel voluptas voluptates</span> voluptatum? Id, voluptate?Accusantium
         ipsam laborum natus quod soluta, veniam? Alias, aliquam deleniti, dolores doloribus ducimus eos explicabo
         facilis, fuga hic ipsum iusto laboriosam magnam nesciunt nobis provident quae quis repudiandae sapiente
         voluptas.</p>
