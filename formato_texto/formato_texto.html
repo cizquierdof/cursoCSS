@@ -5,37 +5,85 @@
     <title>Formato de texto CSS</title>
     <style>
         @import url(resetCSS.css);
-        body{
-            color:#003;
+
+        body {
+            color: #003;
             font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
             font-size: 62%;
+            background:#09f url("imagenes/fondo_div.png") repeat-x;
         }
-        #principal h1{
-            color:#f30;
+
+        #principal h1 {
+            color: #f30;
             font-family: "Arial Black", Arial, Helvetica, sans-serif;
             font-size: 4em;
         }
-        #principal h2{
-            font: bold 3.5em "Hoefler Text",Garamond,Times,serif;
+
+        #principal h2 {
+            font: bold 3.5em "Hoefler Text", Garamond, Times, serif;
             border-bottom: 1px solid black;
             margin-top: 25px;
         }
-        #principal h3{
-            color:#f30;
+
+        #principal h3 {
+            color: #f30;
             font-size: 1.9em;
             font-weight: bold;
             text-transform: uppercase;
             margin: 25px 0 10px 0;
         }
 
+        #principal p {
+            font-size: 1.5em;
+            line-height: 150%;
+            margin: 0 50px 10px 150px;
+        }
+
+        #principal p:first-line {
+            color: #666;
+            font-weight: bold;
+        }
+        #principal ul{
+            margin: 50px 0 25px 50px;
+            width: 160px;
+            float: right;
+        }
+        #principal li{
+            color: #000033;
+            font-size: 1.5em;
+            margin-bottom: 7px;
+        }
+        #principal .autor{
+            font-size: 1.6em;
+            margin: 5px 0 25px 50px;
+        }
+        #principal .autor strong{
+            color: red;
+            text-transform: uppercase;
+            margin-left: 5px;
+        }
+        #principal{
+            width: 760px;
+            margin: auto;
+            border: 4px solid white;
+            padding: 0 10px;
+            background: url("imagenes/fondo.jpg") no-repeat;
+        }
+        #principal h1 strong{
+            font-size: 150px;
+            color: white;
+            margin-right: -0.75em;
+        }
     </style>
 
 </head>
 <body>
 <div id="principal">
     <h1><strong>CSS</strong>El curso total</h1>
+
     <h2>Cambiando el formato al texto</h2>
-    <p>11 Noviembre <strong>Píldoras informáticas</strong></p>
+
+    <p class="autor">11 Noviembre <strong>Píldoras informáticas</strong></p>
     <ul>
         <li>Lorem ipsum dolor</li>
         <li>Aperiam culpa maxime quibusdam</li>
