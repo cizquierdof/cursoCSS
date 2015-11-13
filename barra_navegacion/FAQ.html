@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso CSS</title>
+    <style>
+        @import "resetCSS.css";
+        body{
+            font: 62.5% Verdana,Helvetica,Arial,sans-serif ;
+            padding: 20px;
+        }
+        #barra{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            width: 180px;
+            border-bottom: 1px dashed #999;
+        }
+        #barra a{
+            color: black;
+            font-size: 11px;
+            text-transform: uppercase;
+            text-decoration: none;
+            border: 1px dashed #999;
+            border-bottom: none;
+            display: block;
+            background-color: #e7e7e7;
+            background-image: url("images/fondolink.png");
+            background-repeat: no-repeat;
+            background-position: 0 2px;
+            padding: 7px 5px 7px 30px;
+        }
+        #barra a:hover{
+            font-weight: bold;
+            background: #07f5f7;
+            /*movemos la imagen hacia arriba lo que dejará ver la parte central*/
+            background-image: url("images/fondolink.png");
+            background-repeat: no-repeat;
+            background-position: 3px 50%;
+        }
+        #navegacion #linkFAQ{
+            background-color: white;
+            /*movemos la imagen hacia arriba lo que dejará ver la parte central*/
+            background-image: url("images/fondolink.png");
+            background-repeat: no-repeat;
+            background-position: 97% 100%;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+<nav id="navegacion">
+<ul id="barra">
+    <li><a href="index.html" >Inicio</a></li>
+    <li><a href="FAQ.html" id="linkFAQ">FAQ</a></li>
+    <li><a href="#">Foro</a></li>
+    <li><a href="#">Contacto</a></li>
+    <li><a href="#">Enlaces de interes</a></li>
+    <li><a href="#">Como llegar</a></li>
+</ul>
+</nav>
+
+</body>
+</html>
